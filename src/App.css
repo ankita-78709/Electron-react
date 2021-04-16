@@ -2,37 +2,89 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, #app, #app>div {
+  height: 100%
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body div#root {
+  height: 100%
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: myfont;
+  src: url(/fonts/Allura-Regular.ttf);
 }
 
-.App-link {
-  color: #61dafb;
+.drawer-class {
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.col-3.sidebar-class {
+  padding-left: 0px !important;
+  background : url("/Images/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.profile-details {
+  margin-left: 10px;
+  font-family: myfont;
+  text-align: center;
+}
+
+p{
+  margin-bottom: 2px !important;
+}
+.name-font {
+  font-size: 30px;
+}
+
+.profile-image {
+  height: 200px !important;
+  border-radius: 50% !important;
+}
+
+.carousal-item-text {
+  font-family: myfont;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousal-image {
+  height: 400px;
+  width: 400px;
+}
+
+.about-container {
+  border: 1px solid black;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-family: myfont;
+}
+
+.about-container p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.email-message-text {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.jumbotron {
+  background: url("/Images/cloud-background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0rem !important;
 }
